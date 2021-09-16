@@ -10,6 +10,20 @@ $('form').submit((e) => {
     const mensaje = $('#mensaje').val()
     const genero =$('input[name="genero"]').val()
 
+    if(correo == ""){      
+        alert("el correo no puede estar vacio")
+
+    }
+    if(mensaje == ""){      
+        alert("el mensaje no puede estar vacio")
+
+    }
+    if(correo != "" && mensaje != ""){
+        alert("tu formulario está correcto")
+
+    }
+
+
 
 
     const formValue = {
